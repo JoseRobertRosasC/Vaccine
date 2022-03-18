@@ -1,0 +1,772 @@
+/*Fuente que usaremos en todo el sitio*/
+*{
+    font-family: Poppins,Montserrat,Arial;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Color de fondo y quitamos margenes*/
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*Parámetros de la cabecera*/
+header{
+    background-color: white;
+    width: 100%;
+    height: 115px;
+    margin-top: 7px;
+    display: table;
+    clear: both;
+}
+
+/*Ancho del menu*/
+.menu{
+    width: 1075px;
+    margin: 0 auto;
+}
+
+/*Posicionamos el logotipo*/
+.logo{
+    position: absolute;
+    top: 45px;
+    width: 120px;
+    height: auto;
+}
+
+/*Configuramos la navBar*/
+nav{
+    /*Desplazamos nuestra NavBar hacía la derecha*/
+    float: right;
+}
+
+/*Quitamos estilos de las listas y configuramos las dimensiones*/
+nav ul li {
+    list-style: none;
+    margin-left: 50px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+    top: 30px;
+}
+
+/*Decoramos las listas*/
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+/*Animación con el puntero (color superior)*/
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #204379 ;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.3s;
+}
+
+/*Animación con el puntero (Animación aparece-desaparece en la parte superior)*/
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/*Clase padre de nuestros botones*/
+.btn{
+    position: relative;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 13px 25px;
+    text-decoration: none; 
+}
+
+/*Configuración individual del boton de la Barra de navegación*/
+.btnNavBar{
+    position: relative;
+    color: white;
+    background-color:  #164DBC;
+    top: 28px;
+    margin-left: 50px;
+}
+
+/*Color al posicionar el mouse sobre el boton de la Barra de navegación*/
+.btn:hover{
+    background-color: #2946b9;
+}
+
+/*Color al dar clic en el boton de la Barra de navegación*/
+.btn:active{
+    background-color: #243ea5;
+}
+
+/*Sección 1 (Parte izquierda)*/
+.izquierda{
+    background-color: white;
+    height: 102vh;
+    width: 52%;
+}
+
+/*Sección 2 (Parte derecha)*/
+.derecha{
+    background: url(./images/Enfermera.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 48%;
+    height: 102vh;
+}
+
+/*Colocamos la imágen a la derecha de la pantalla*/
+#pantalla-dividida{
+    display: flex;
+}
+
+/*Etiqueta h1 GLOBAL*/
+h1{
+    font-size: 44px;
+    font-weight: bold;
+    color:  #1e336f;
+    width: 50%;
+    position: relative;
+    top: 55px;
+    margin-bottom: 40px;
+    margin-left: 116px;
+}
+
+/*Etiqueta p GLOBAL*/
+p{
+    font-weight: bold;
+    color:  #6b7c94;
+}
+
+/*Parrafo de Sección1 izquierda*/
+.txtSeccion1{
+    position: relative;
+    top: 40px;
+    font-size: 15px;
+    line-height: 30px;
+    width: 50%;
+    margin-left: 116px;
+}
+
+/*Parrafo de Sección1 izquierda*/
+.txtSeccion1-1{
+    color: #204379;
+    position: relative;
+    top: 75px;
+    font-size: 12px;
+    line-height: 30px;
+    width: 50%;
+    margin-left: 116px;
+}
+
+/*Parámetros de icono en Seccion 1 izquierda*/
+.icoSeguridad{
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: auto;
+    margin-left: 0px;
+    margin-right: 12px;
+}
+
+/*Parámetros de icono en Seccion 1 izquierda*/
+.icoStar{
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 12px;
+}
+
+/*Diseño de nuestro subtítulo*/
+.subtitle{
+    color: #204379;
+    position: relative;
+    top: 180px;
+    line-height: 30px;
+    width: 50%;
+    margin-left: 116px;
+}
+
+/*Parámetros de icono en Seccion 1 izquierda*/
+.icoReloj{
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: auto;
+    margin-left: 0px;
+    margin-right: 12px;
+}
+
+/*Contenedor del apartado "Registro"*/
+.registro{
+    position: absolute;
+    left: 113px;
+    top: 560px;
+    width: 780px;
+    height: 117px;
+    border-radius: 5px;
+    transform: translate(0%,50%);
+    background-color: rgb(255, 255, 255,.97);
+}
+
+/*Parrafo de Sección1 derecha*/
+.txtSeccion1-2{
+    position: relative;
+    top: 28px;
+    font-size: 16px;
+    margin-left: 0px;
+}
+
+/*Icono de la seección de "Registro"*/
+.icoUbicacion{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 12px;
+}
+
+/*Icono de la seección de "Registro"*/
+.icoCalendario{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: auto;
+    margin-left: 110px;
+    margin-right: 12px;
+}
+
+/*Icono de la seección de "Registro"*/
+.icoLapiz{
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: auto;
+    margin-left: 110px;
+    margin-right: 12px;
+}
+
+/*Modificación del color y altura del texto en el contenedor "Registro"*/
+.colorytop{
+    display: inline;
+    position: relative;
+    top: 38px;
+    font-size: 18px;
+    color:  #1e336f;
+}
+/*Parrafo del contenedor Registro*/
+.txtSeccion1-3{
+    margin-left: 61px;
+    margin-right: 81px;
+}
+
+/*Parrafo del contenedor Registro*/
+.txtSeccion1-5{
+    margin-left: 69px;
+}
+
+/*Botón del contenedor Registro*/
+.btnSubmit{
+    position: relative;
+    color: white;
+    font-size: 13px;
+    background-color:  #164DBC;
+    top: 7px;
+    padding: 13px 35px;
+    margin-left: 85px;
+}
+
+/*Sombra del boton Submit*/
+.btnSubmit::after{
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    content: ' ';
+    background: linear-gradient(to bottom, #0052d4, #4364f7, #6fb1fc);
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+/*Imagen con logotipos de vacunas*/
+#fondoVacuna{
+    background-image: url(./images/fondoVacunas.png);
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+
+}
+
+/*Nueva sección*/
+.razones{
+    background-color: white;
+    width: 100%;
+    height: 105vh;
+    
+}
+
+/*Parámetros del subtítulo en Sección Razones*/
+.subtitleRazones{
+    position: relative;
+    color: #1e336f;
+    font-size: 32px;
+    top: 40px;
+    line-height: 30px;
+    width: 50%;
+    margin-left: 116px;
+}
+
+/*Parámetros de texto en Razones*/
+.txtSeccion2{
+    position: relative;
+    top: 80px;
+    font-size: 15px;
+    line-height: 30px;
+    width: 35%;
+    margin-left: 116px;
+}
+
+/*Contenedor para los bloques*/
+.contenedorBloques{
+    position: relative;
+    top: 110px;;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Clase bloque GENERAL*/
+.bloque{
+    position: relative;
+    background-color: white;
+    width: 18%;
+    height: 290px;
+    margin: 22px;
+    border: 2px rgba(245, 242, 242, 0.945) solid;
+    border-radius: 10px;
+}
+
+/*Posicionamiento de imagenes dentro de los bloques*/
+.ajusteImagen1{
+    position: relative;
+    top: 18px;
+    left: 18px;
+    width: 60px;
+    height: 60px;
+}
+
+/*Posicionamiento de imagenes dentro de los bloques*/
+.ajusteImagen2{
+    position: relative;
+    top: 18px;
+    left: 18px;
+    width: 53px;
+    height: 53px;
+}
+
+/*Posicionamiento de imagenes dentro de los bloques*/
+.ajusteImagen3y4{
+    position: relative;
+    top: 18px;
+    left: 24px;
+    width: 53px;
+    height: 53px;
+}
+/*Posicionamiento de texto dentro de los bloques*/
+.encabezadoDivs1-2{
+    position: relative;
+    color: #1e336f;
+    font-size: 18px;
+    top: 20px;
+    left: 26px;
+    width: 70%;
+}
+
+/*Posicionamiento de texto dentro de los bloques*/
+.encabezadoDivs3-4{
+    position: relative;
+    color: #1e336f;
+    font-size: 18px;
+    top: 20px;
+    left: 23px;
+    width: 70%;
+}
+
+/*Posicionamiento de texto dentro de los bloques*/
+.parrafoDivs1y2{
+    position: relative;
+    color: #6b7c94 ;
+    font-size: 12px;
+    top: 38px;
+    left: 26px;
+    width: 80%;
+}
+
+/*Posicionamiento de texto dentro de los bloques*/
+.parrafoDivs3y4{
+    position: relative;
+    color: #6b7c94 ;
+    font-size: 12px;
+    top: 38px;
+    left: 23px;
+    width: 80%;
+}
+
+/*Nueva Sección2*/
+#pantalla-dividida2{
+    display: flex;
+}
+
+/*Parámetros del lado izquierdo*/
+.izquierda2{
+    background-image: url(./images/Chica.png);
+    background-size: 95% 80%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    width: 43%;
+    height: 105vh;
+}
+
+/*Parámetros del lado izquierdo*/
+.derecha2{
+    background-color: white;
+    width: 57%;
+    height: 105vh;
+}
+
+/*Ajustes de texto*/
+.ajusteSub{
+    width: 70%;
+    margin-left: 70px;
+    line-height: 10px;
+    top: 60px;
+}
+
+/*Ajustes de texto*/
+.ajusteParrafo{
+    width: 61%;
+    margin-left: 70px;
+    line-height: 27px;
+    top: 100px;
+}
+
+/*Contenedor para las pestañas*/
+.contenedorPestañas{
+    position: relative;
+    top: 120px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Clase padre de las pestañas*/
+.pestaña{
+    background-color: white;
+    width: 55%;
+    height: 50px;
+    margin: 10px;
+    margin-bottom: 17px;
+    margin-left: 70px;
+    border: 2px rgba(245, 242, 242, 0.945) solid;
+    border-radius: 10px;
+}
+
+/*Ajuste de ancho en las pestañas*/
+.ajustePestaña2{
+    height: 110px;
+}
+
+/*Ajuste de texto dentro de las pestañas*/
+.textoConfig{
+    position: relative;
+    color: #1e336f;
+    font-size: 14px;
+    top: 3px;
+    width: 96%;
+    font-weight: 500;
+}
+
+/*Parámetros de posicionamiento y tamaño de iconos iniciales dentro de las pestañas*/
+.ajusteIconoInicio{
+    position: relative;
+    width: 25px;
+    height: auto;
+    top: 7px;
+    left: 15px;
+    margin-right: 25px;
+}
+
+/*Parámetros de posicionamiento y tamaño de iconos finales dentro de las pestañas*/
+.ajusteIconoFinal{
+    position: relative;
+    width: 17px;
+    height: auto;
+    top: 13px;
+    float: right;
+}
+
+/*Parámetros de texto en pestañas*/
+.textoPestaña2{
+    position: relative;
+    color: #6b7c94 ;
+    font-size: 10px;
+    top: 10px;
+    left: 53px;
+    width: 65%;
+    font-weight: 500;
+}
+
+/*Contenedor vacío. Su función es crear espacio en blanco*/
+.fondoBlanco{
+    background-color: white;
+    width: 100%;
+    height: 18vh;
+}
+
+/*Nueva Sección3*/
+#pantalla-dividida3{
+    display: flex;
+}
+
+/*Configuramos el lado izquierdo de la sección3*/
+.izquierda3{
+    background-color: white;
+    width: 57%;
+    height: 100vh;
+}
+
+/*Configuramos el lado derecho de la sección3*/
+.derecha3{
+    background-image: url(./images/Chico.png);
+    background-size: 95% 81%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    width: 43%;
+    height: 100vh;
+}
+
+/*Parámetros de texto del parrafo*/
+.ajusteParrafo2{
+    width: 64%;
+    top: 70px;
+}
+
+/*Contenedor para las cuadrículas*/
+.contenedorCuadrados{
+    background-color: white;
+    position: relative;
+    top: 103px;
+    width: 73%;
+    height: 67%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Clase PADRE para las cuadrículas*/
+.cuadrado{
+    position: relative;
+    background-color: white;
+    top: 5px;
+    width: 37%;
+    height: 36%;
+    margin: 5% 5% 5% 5%;
+    border: 2px rgba(245, 242, 242, 0.945) solid;
+    border-radius: 10px;
+}
+
+/*Parámetros de texto dentro de las cuadrículas*/
+.texto1cuadrado{
+    position: relative;
+    color: #1e336f;
+    font-size: 17px;
+    top: 0px;
+    width: 100;
+    font-weight: 500;
+}
+
+/*Posicionamiento del primer icono en las cuadrículas*/
+.iconoEsquina{
+    position: relative;
+    width: 40px;
+    height: auto;
+    top: 25px;
+    left: 15px;
+    margin-right: 25px;
+}
+
+/*Parámetros del texto debajo del parrafo anterior*/
+.texto2cuadrado{
+    position: relative;
+    color: #6b7c94;
+    font-size: 11px;
+    top: 5px;
+    left: 69px;
+    width: 100;
+    font-weight: 500;
+}
+
+/*Creación de los botones 1 y 2 de las cuadriículas*/
+.btnCuadrado1y2{
+    position: relative;
+    border-radius: 3px;
+    padding: 13px 50px;
+    text-decoration: none; 
+    color: #2f4fcd;
+    font-size: 13px;
+    background-color:  #d0d9f3;
+    top: 30px;
+    margin-left: 9%;
+    font-weight: bold;
+    border: 2px rgba(245, 242, 242, 0.945) solid;
+}
+
+/*Ajuste de color del segunddo boton*/
+.ajusteColor{
+    background-color: #2f4fcd;
+    color: #d0d9f3;
+}
+
+/*Creación de los botones 3 y 4 de las cuadriículas*/
+.btnCuadrado3y4{
+    position: relative;
+    border-radius: 3px;
+    padding: 13px 35px;
+    text-decoration: none; 
+    color: #2f4fcd ;
+    font-size: 13px;
+    background-color:  #d0d9f3;
+    top: 30px;
+    margin-left: 8%;
+    font-weight: bold;
+    border: 3px rgba(245, 242, 242, 0.945) solid;
+}
+
+/*Color al posicionar el mouse sobre el boton  1 3 y 4*/
+.btnCuadrado1y2 .btnCuadrado3y4:hover{
+    background-color: #aeb8d3a2
+}
+
+/*Color al dar clic en el boton 1 3 y 4*/
+.btnCuadrado1y2 .btnCuadrado3y4:active{
+    background-color: #5e657557;
+}
+
+/*Color al posicionar el mouse sobre el boton 2*/
+.ajusteColor:hover{
+    background-color: #2f4fcd98;
+}
+
+/*Color al dar clic en el boton 2*/
+.ajusteColor:active{
+    background-color: #2944af2c;
+}
+
+
+/*PIE DE PÁGINA*/
+/*Tamaño del pie de página*/
+.pie-pagina{
+    width: 100%;
+    background-color: #dce5f9  ;
+}
+
+/*Dividimos el contenedor*/
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 500px 115px 115px 115px;
+    grid-gap: 100px;
+    padding: 45px 0px;
+}
+
+/*Ajustamos tamaño*/
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /*Centramos de manera horizontal*/
+    justify-content: center;
+    /*Centramos de manera vertical*/
+    align-items: center;
+}
+
+/*Ajustamos la imagen del logotipo*/
+.pie-pagina .grupo-1 .box figure img{
+    position: relative;
+    margin-left: 2px;
+    width: 120px;
+}
+
+/*Ajustamos tamaño y posicionamiento del parrafo*/
+.pie-pagina .grupo-1 .box figure p{
+    position: relative;
+    width: 40%;
+    margin-left: 2px;
+    top: 15px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/*Ajustamos el h2*/
+.pie-pagina .grupo-1 .box h2{
+    color: #1e336f;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/*Parámetros de la etiqueta a*/
+.pie-pagina .grupo-1 .box a{
+    color: #6b7c94;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/*Fondo y margen del grupo 2*/
+.pie-pagina .grupo-2{
+    background-color: #dce5f9;
+    padding: 15px 10px;
+    text-align: left;
+    color: #6b7c94;
+    
+}
+
+/*Ajustamos el fondo del parrafo dentro del small*/
+.pie-pagina .grupo-2 small p{
+    font-size: 13px;
+    margin-left: 90px;
+    font-weight: 500;
+    
+}
+
+/*Parámetros de la etiqueta a dentro del small*/
+.pie-pagina .grupo-2 small a{
+    color: #6b7c94;
+    position: relative;
+    top: -20px;
+    text-decoration: none;
+    float: right;
+    margin-right: 125px;
+    font-size: 13px;
+    font-weight: 500;
+}
